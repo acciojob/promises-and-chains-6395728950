@@ -3,7 +3,7 @@
 	  e.preventDefault();
 	  const name = document.getElementById('name').value.trim();
 	  const age =  parseInt(document.getElementById('age').value);
-	  if(name ==='' || age ===''){
+	  if(!name || isNaN(age)){
 		  alert("Please enter valid details");
 		  return;
 	  }
